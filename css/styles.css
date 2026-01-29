@@ -155,13 +155,13 @@ body, a, p {
     margin: 0 8rem;
 }
 
-.bestsellers-header {
+.section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.bestsellers-title {
+.section-title {
     font-size: 2rem;
 }
 
@@ -176,7 +176,7 @@ body, a, p {
 }
 
 .view-all-link {
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: #151C22;
     text-decoration: none;
     font-weight: 500;
@@ -226,6 +226,92 @@ body, a, p {
 
 .card-price {
     font-weight: bold;
+}
+
+/* #endregion */
+
+/* #region news */
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin: 0 8rem;
+}
+
+.news-article {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.news-content {
+  position: relative;
+  background-color: #F1F2F4;
+  padding: 2rem;
+}
+
+.news-content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../img/lines2.png');
+
+  z-index: -1;
+}
+
+
+/* .news-article::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100%;
+    height: auto;
+
+    background-image: url('../img/lines2.png');
+} */
+
+.news-image,
+.news-content {
+  position: relative;
+  z-index: 1;
+}
+
+.news-image {
+    grid-column: 1 / 9;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+}
+
+.news-content {
+    grid-column: 9 / 13;
+    grid-row: 1;
+    background-color: #F1F2F4;
+    padding: 2rem;
+    z-index: 1;
+}
+/* #endregion */
+
+/* #region shop by caregory */
+
+.shop-categories-section {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin: 0 8rem;
+    margin-bottom: 6rem;
 }
 
 /* #endregion */
