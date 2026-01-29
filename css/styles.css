@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
     box-sizing: border-box;
@@ -51,6 +52,82 @@ body, a, p {
     height: 1.125rem;
 }
 
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    background-color: #F1F2F4;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.hero-subtitle {
+    font-size: 1.125rem;
+    color: #727A82;
+}
+
+.hero-title {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    font-size: 8rem;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #151C22;
+    color: white;
+    text-transform: none;
+    padding: 1.2rem 3rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-image-container {
+  position: relative;
+  display: inline-block;
+  padding: 40px;
+}
+
+.hero-image {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
+
+.lines-top,
+.lines-bottom {
+  position: absolute;
+  z-index: 1;
+  width: 11rem;
+}
+
+.lines-top {
+  top: 0;
+  left: 0;
+}
+
+.lines-bottom {
+  bottom: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.hero-image {
+    width: auto;
+    height: 26.875rem;
+}
 
 .footer {
     display: flex;
