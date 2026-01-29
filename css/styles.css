@@ -12,6 +12,8 @@ body, a, p {
     color: #151C22;
 }
 
+/* #region header */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -51,6 +53,18 @@ body, a, p {
     width: 1.125rem;
     height: 1.125rem;
 }
+
+/* #endregion */
+
+/* #region main */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+/* #region hero */
 
 .hero {
     position: relative;
@@ -129,6 +143,96 @@ body, a, p {
     height: 26.875rem;
 }
 
+/* #endregion */
+
+/* #region Bestsellers */
+
+.bestsellers {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    margin: 0 8rem;
+}
+
+.bestsellers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bestsellers-title {
+    font-size: 2rem;
+}
+
+.section-header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.view-all-link {
+    font-size: 1.125rem;
+    text-decoration: none;
+}
+
+.view-all-link {
+    font-size: 1rem;
+    color: #151C22;
+    text-decoration: none;
+    font-weight: 500;
+    
+    position: relative; 
+    border-bottom: none; 
+}
+
+.view-all-link::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    
+    left: -5px;
+    right: -5px;
+    
+    height: 2px;
+    background-color: #151C22;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    display: block;
+}
+
+.card-image {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem 0;
+}
+
+.card-price {
+    font-weight: bold;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #region footer */
 .footer {
     display: flex;
     flex-direction: column;
@@ -154,3 +258,5 @@ body, a, p {
     color: white;
     font-size: 1.125rem;
 }
+
+/* #endregion */
