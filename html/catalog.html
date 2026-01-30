@@ -24,24 +24,86 @@
         </nav>
     </header>
 
-    <main class="main">
+    <main class="catalog-main">
         <section class="catalog-header-section">
-            <header class="catalog-header">
-                <section class="catalog-header-content">
-                    <h3 class="catalog-header-title"><a href="#">All categories</a></h3>
-                    <p class="separator-mark">/</p>
-                    <h3 class="catalog-header-title"><a href="#">Woman</a></h3>
-                    <p class="separator-mark">/</p>
-                    <h3 class="catalog-header-title"><a href="#">Jackets</a></h3>
-                </section>
-                <header class="catalog-header">
-                    <h2 class="catalog-title">Denim Collection Fall 2019</h2>
-                </header>
-            </header>
+            <div class="catalog-header-wrapper">
+                <nav class="catalog-breadcrumb">
+                    <a href="#" class="breadcrumb-item">All categories</a>
+                    <span class="separator-mark">/</span>
+                    <a href="#" class="breadcrumb-item">Woman</a>
+                    <span class="separator-mark">/</span>
+                    <span class="breadcrumb-item active">Jackets</span>
+                </nav>
+                <h2 class="catalog-title">Denim Collection<br>Fall 2019</h2>
+            </div>
+            
             <figure class="catalog-image-container">
-                <img src="../img/lines.png" alt="" class="lines-top">
-                <img src="../img/catalog-image.png" alt="Denim Collection" class="catalog-hero-image">
-                <img src="../img/lines.png" alt="" class="lines-bottom">
+                <img src="../img/lines.png" alt="" class="lines-top-catalog">
+                <img src="../img/catalog-image.png" alt="Denim Collection" class="catalog-image">
+                <img src="../img/lines.png" alt="" class="lines-bottom-catalog">
+            </figure>
+        </section>
+
+        <section class="catalog-products-section">
+            <header class="filter-header">
+                <figure class="custom-select">
+                    <select>
+                        <option>Filter by</option>
+                        <option>Date</option>
+                        <option>Popularity</option>
+                    </select>
+                </figure>
+            </header>
+            <ul class="cards catalog-grid">
+                <li class="card">
+                    <img src="../img/product-1.png" alt="Jacket" class="card-image">
+                    <h4 class="card-title">Jacket</h4>
+                    <p class="card-price">$40</p>
+                </li>
+                <li class="card">
+                    <img src="../img/product-2.png" alt="Jacket" class="card-image">
+                    <h4 class="card-title">Jacket</h4>
+                    <p class="card-price">$70</p>
+                </li>
+                <li class="card">
+                    <img src="../img/product-3.png" alt="Jacket" class="card-image">
+                    <h4 class="card-title">Jacket</h4>
+                    <p class="card-price">$60</p>
+                </li>
+                <li class="card">
+                    <img src="../img/product-4.png" alt="Jacket" class="card-image">
+                    <h4 class="card-title">Jacket</h4>
+                    <p class="card-price">$50</p>
+                </li>
+                <li class="card">
+                    <img src="../img/product-5.png" alt="Jacket" class="card-image">
+                    <h4 class="card-title">Jacket</h4>
+                    <p class="card-price">$40</p>
+                </li>
+                <li class="card">
+                    <img src="../img/product-6.png" alt="Jacket" class="card-image">
+                    <h4 class="card-title">Jacket</h4>
+                    <p class="card-price">$110</p>
+                </li>
+                <li class="card">
+                    <img src="../img/product-7.png" alt="Jacket" class="card-image">
+                    <h4 class="card-title">Jacket</h4>
+                    <p class="card-price">$35</p>
+                </li>
+                <li class="card">
+                    <img src="../img/product-8.png" alt="Jacket" class="card-image">
+                    <h4 class="card-title">Jacket</h4>
+                    <p class="card-price">$85</p>
+                </li>
+            </ul>
+
+            <footer class="catalog-footer">
+                <p class="showing-text">Showing 9 of 45 items</p>
+                <figure class="progress-bar-container">
+                    <figure class="progress-bar-fill"></figure>
+                </figure>
+                <button class="load-more-btn">Load more</button>
+            </footer>
         </section>
     </main>
 
