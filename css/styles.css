@@ -36,6 +36,7 @@ body, a, p {
     list-style: none;
     margin: 0;
     padding: 0;
+    font-weight: 500;
 }
 
 .header-title {
@@ -101,7 +102,6 @@ body, a, p {
     padding: 1.2rem 3rem;
     font-size: 1rem;
     font-weight: 700;
-    transition: 0.3s;
 }
 
 .hero-image-container {
@@ -519,6 +519,147 @@ body, a, p {
 }
 
 /* #endregion */
+
+/* #endregion */
+
+/* product page */
+
+/* #region Product Page */
+
+.product-page {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    margin: 3rem 0 0 0;
+}
+
+.product-images {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.main-image-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.7rem;
+}
+
+.nav-arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    margin: 0 5rem;
+}
+
+.product-sub-images {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.product-thumbnail {
+    width: calc(23rem / 4);
+    height: auto;
+}
+
+.product-details {
+    grid-column: 2 / 2;
+    background-color: #F1F2F4;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 5rem 3rem 5rem;
+}
+
+.product-main-image {
+    width: calc((23rem / 4) * 4 + 3 * 0.5rem);
+    height: auto;
+}
+
+.product-name {
+    font-size: 2rem;
+}
+
+.product-description {
+    padding-right: 6rem;
+}
+
+.product-colors {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.product-colors h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.colors {
+    display: flex;
+    gap: 1rem;
+}
+
+.color {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #D1D5DB;
+}
+
+.color.green { background-color: #B0C3C7; }
+.color.blue  { background-color: #3B6392; }
+.color.gray  { background-color: #BFC3C8; }
+
+.color.active {
+    outline: 2px solid #B0C3C7;
+    outline-offset: 3px;
+}
+
+.product-sizes {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.product-sizes h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.sizes {
+    display: flex;
+    gap: 1rem;
+}
+
+.size {
+    font-size: 1.125rem;
+    color: #727A82;
+    cursor: pointer;
+}
+
+.size.active {
+    color: #151C22;
+}
+
+.product-price {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+.add-to-cart-button {
+    background-color: #151C22;
+    color: white;
+    border: none;
+    padding: 1.25rem 4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: fit-content;
+}
+
 
 /* #endregion */
 
