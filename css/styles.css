@@ -60,7 +60,7 @@ body, a, p {
 .main {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: 6.7rem;
 }
 
 /* #region hero */
@@ -150,9 +150,9 @@ body, a, p {
 .bestsellers {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 3.5rem;
 
-    margin: 0 8rem;
+    margin: 0 5.7rem;
 }
 
 .section-header {
@@ -163,6 +163,7 @@ body, a, p {
 
 .section-title {
     font-size: 2rem;
+    margin-top: 0.2rem;
 }
 
 .section-header {
@@ -198,7 +199,7 @@ body, a, p {
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    gap: 1.5rem;
 
     list-style: none;
     padding: 0;
@@ -212,8 +213,9 @@ body, a, p {
 }
 
 .card-image {
-    width: 100%;
-    margin-bottom: 1rem;
+    width: 97%;
+    height: auto;
+    margin-bottom: 1.5rem;
 }
 
 .card-title {
@@ -343,8 +345,6 @@ body, a, p {
 }
 
 /* #endregion */
-
-
 
 /* #region catalog */
 
