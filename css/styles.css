@@ -541,8 +541,8 @@ body, a, p {
 
 .product-page {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    margin: 3rem 0 0 0;
+    grid-template-columns: 1fr 1fr;
+    margin: 3.1rem 0 2.5rem 0;
 }
 
 .product-images {
@@ -554,25 +554,36 @@ body, a, p {
 .main-image-container {
     display: flex;
     flex-direction: row;
-    margin-left: 0.7rem;
+    margin-left: 10rem;
+    position: relative;
 }
 
 .nav-arrow {
+    position: absolute;
     background: none;
     border: none;
     font-size: 2rem;
-    margin: 0 5rem;
+    margin: -3rem 2.5rem;
+}
+
+.nav-arrow.left {
+    margin: 10.5rem -4.5rem 0;
+}
+
+.nav-arrow.right {
+    margin: 10.5rem 26.5rem 0;
 }
 
 .product-sub-images {
     display: flex;
     flex-direction: row;
-    gap: 0.5rem;
-    justify-content: center;
+    gap: 1.25rem;
+    justify-content: end;
+    margin: 0.5rem 6rem;
 }
 
 .product-thumbnail {
-    width: calc(23rem / 4);
+    width: 5rem;
     height: auto;
 }
 
@@ -581,12 +592,13 @@ body, a, p {
     background-color: #F1F2F4;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 3rem 5rem 3rem 5rem;
+    gap: 1.5rem;
+    padding: 3.5rem 6rem 3rem 4rem;
+    margin-left: 1rem;
 }
 
 .product-main-image {
-    width: calc((23rem / 4) * 4 + 3 * 0.5rem);
+    width: 23.5rem;
     height: auto;
 }
 
@@ -596,12 +608,14 @@ body, a, p {
 
 .product-description {
     padding-right: 6rem;
+    margin-bottom: 0.8rem;
 }
 
 .product-colors {
     display: flex;
     gap: 1rem;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .product-colors h3 {
@@ -660,19 +674,19 @@ body, a, p {
 .product-price {
     font-size: 1.125rem;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 .add-to-cart-button {
     background-color: #151C22;
     color: white;
     border: none;
-    padding: 1.25rem 4rem;
+    padding: 1.25rem 3.2rem;
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     width: fit-content;
 }
-
 
 /* #endregion */
 
